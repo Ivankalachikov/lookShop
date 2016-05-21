@@ -1,0 +1,55 @@
+@import "mixin.less";
+@import "variables.less";
+@import "typography.less";
+
+.menu{
+	&__inner{
+		
+		padding-top: 55px;
+		.clr();
+	}
+
+	&__logo-wrap{
+		text-align: center;
+		padding-bottom: 55px;
+
+		@media(min-width:768px) and (max-width:1200px){
+			float: left;
+			margin-left: 3%;
+		}
+		@media(min-width:1200px){
+			float: left;
+			margin-left: 130px;
+			padding-bottom: 0;
+		}
+	}
+
+	&__logo-img{
+		width: 55%;
+		height: auto;
+
+		@media(min-width:768px){
+			width: 120px;
+			height: auto;
+		}
+
+	}
+
+	&__nav-wrap{
+		clear: both;
+		margin-bottom: 15px;
+		@media(min-width:1200px){
+			clear: none;
+			float: left;
+		}
+	}
+
+	&__cart-wrap{
+		.clr();
+		@media(min-width:1200px){
+			.clr();
+			float: right;
+			margin-right: 130px;
+		}
+	}
+}

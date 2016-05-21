@@ -1,0 +1,164 @@
+@import "mixin.less";
+@import "variables.less";
+@import "typography.less";
+
+.slider{
+	display: none;
+
+	@media(min-width:768px) and (max-width:1200px){
+		display: block;
+		height: 100% !important;
+		position: relative;
+  }
+
+  	@media(min-width:1200px){
+		display: block;
+		height: 100% !important;
+		position: relative;
+  }
+
+
+  &__wrap{
+  	position: relative;
+  	clear: both;
+  }
+
+  &__item{
+  	text-align: center;
+  	//position: relative;
+  	display: block;
+  }
+
+  &__img{
+  	width: 100vw;
+  	height: auto;
+  	&:focus{
+  		outline:none;
+  		border:none;
+  	}
+  }
+
+  &__btn{
+  	.btn-coral();
+  	position: absolute;
+  	z-index: 1000000;
+  	top:70%;
+  	left: 22vw;
+  	@media(min-width:1200px){
+  		font-size: 1.6rem;
+  		left: 22vw;
+  	}
+		&::after{
+			content: "\70";
+			top:33%;
+		}
+	}
+	
+}
+
+
+
+.slider__arrows{
+	&::after{
+		display: none;
+	}
+	@media(min-width:768px) and (max-width:1200px){
+		&::after{
+			display: inline;
+		}
+		display: block;
+		top:40%;
+		margin-top: -60px;
+		width: 30px;
+		height: 120px;
+		display: block;
+		background-color: @bg-white;
+		opacity:.4;
+		font-size: 0;
+		font-family: "untitled-font-4";
+		position: absolute;
+		border:none;
+		outline:none;
+		transition:opacity 1s;
+	}
+	@media(min-width:1200px){
+		&::after{
+			display: inline;
+		}
+		display: block;
+		top:43%;
+		margin-top: -60px;
+		width: 30px;
+		height: 120px;
+		display: block;
+		background-color: @bg-white;
+		opacity:.4;
+		font-size: 0;
+		font-family: "untitled-font-4";
+		position: absolute;
+		border:none;
+		outline:none;
+		transition:opacity 1s;
+	}
+}
+
+.slider__arrow--next{
+	right: 0;
+	&:hover{
+		opacity:1;
+	}
+	&::after{
+		content: "\6c";
+		font-size: 1rem;
+		position: absolute;
+		top: 43%;
+	}
+}
+
+
+.slider__arrow--prev{
+	left: 0;
+	z-index: 10;
+	&:hover{
+		opacity:1;
+	}
+	&::after{
+		content: "\71";
+		font-size: 1rem;
+		position: absolute;
+		top: 43%;
+	}
+}
+
+.slick-slide{
+	position: relative;
+	&:focus{
+		outline:none;
+		border:none;
+	}
+}
+
+.slick-dots{
+	list-style:none;
+	margin: 22px 0;
+	text-align: center;
+	& li{
+		margin: 0 10px;
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		background-color: @dots-unactive;
+		border-radius: 5px;
+		overflow: hidden;
+		text-indent: -999em;
+		cursor: pointer;
+	}
+	& .slick-active{
+	background-color: @bg-coral;
+	cursor: default;
+}
+}
+
+
+
+

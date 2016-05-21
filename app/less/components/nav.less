@@ -1,0 +1,139 @@
+@import "mixin.less";
+@import "variables.less";
+@import "typography.less";
+
+.nav{
+	
+	.clr();
+	@media(min-width:1200px){
+		position: relative;
+		top: -12px;
+	}
+
+	&__header{
+		color: @text-white;
+		background-color: @bg-coral;
+		padding: 25px 5%;
+		text-transform: uppercase;
+		@media(min-width:1200px){
+			display: none;
+		}
+	}
+
+	&__list{
+		display: none;
+		position: relative;
+		list-style:none;
+		margin: 0;
+		padding: 0;
+	}
+
+	&__list--lv1{
+		display: block;
+		@media(min-width:1200px){
+			float: left;
+			margin-left: 100px;
+		}
+	}
+
+	&__icon{
+		cursor: pointer;
+		float: right;
+		position: relative;
+		top: 2px;
+		&:hover{
+			opacity: .7;
+		}
+	}
+
+	&__item{
+		padding: 0;
+		margin: 0;
+		background-color: lighten(@bg-coral,3);
+		padding-left: 1.5em;
+		position: relative;
+		@media(min-width:1200px){
+			display: inline-block;
+			background-color: @bg-white;
+		}
+	}
+
+	&__item-link{
+		display: block;
+		position: relative;
+		padding-left: 5%;
+		color: @text-white;
+		text-transform: uppercase;
+		padding-top:15px;
+		padding-bottom: 15px;
+		overflow: hidden;
+		border-bottom: 2px solid darken(@bg-coral,2);
+		@media(min-width:1200px){
+			font-size: 1.33rem;
+			color: @text-black;
+			padding-right: 25px;
+			border-bottom: none;
+			text-transform: lowercase;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+
+	&__item-link--parent{
+		&::after{
+			content: "\6b";
+			font-family: "untitled-font-4";
+			position: absolute;
+			color: @text-white;
+			right: 20px;
+			top: 10px;
+			text-transform: none;
+			@media(min-width:1200px){
+				color: @text-black;
+				top: 14px;
+				right: 0;
+			}
+		}
+	}
+
+
+	&__list> &__item> &__list> &__item> &__item-link--parent{
+		&::after{
+			content: "\70";
+		}
+	}
+
+
+
+	
+
+	&__list &item &list{
+		display: none;
+	}
+
+	&__item--hover> &__list{
+		display: block;
+
+		@media(min-width:1200px){
+			position: absolute;
+			top: 100%;
+			left: 0;
+			z-index: 1;
+			border-width:0 1px 1px 1px;
+			border-style:solid;
+			border-color: @mid-gray;
+			background-color: @bg-white;
+			box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.35);
+		}
+	}
+
+	&__item--hover> &__list> &__item--hover> &__list{
+		@media(min-width:1200px){
+			position: absolute;
+			left: 100%;
+			top: 0;
+		}
+	}
+
+}

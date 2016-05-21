@@ -1,0 +1,149 @@
+@import "components/sprite.less";
+@import "components/slick.less";
+@import "components/page-header.less";
+@import "components/mixin.less";
+@import "components/variables.less";
+@import "components/about.less";
+@import "components/brands.less";
+@import "components/cart.less";
+@import "components/clearance.less";
+@import "components/footer-nav.less";
+@import "components/footer.less";
+@import "components/goods.less";
+@import "components/menu.less";
+@import "components/nav.less";
+@import "components/payments.less";
+@import "components/promo.less";
+@import "components/top-line.less";
+@import "components/typography.less";
+@import "components/normalize.less";
+@import "components/slider.less";
+@import "components/global.less";
+@import "components/btm-line.less";
+
+//Подключаем иконочный шрифт
+
+@charset "UTF-8";
+
+@font-face {
+  font-family: "untitled-font-4";
+  src:url("../fonts/untitled-font-4.eot");
+  src:url("../fonts/untitled-font-4.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/untitled-font-4.woff") format("woff"),
+    url("../fonts/untitled-font-4.ttf") format("truetype"),
+    url("../fonts/untitled-font-4.svg#untitled-font-4") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+[data-icon]:before {
+  font-family: "untitled-font-4" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1.3;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "untitled-font-4" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1.3;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-user:before {
+  content: "\61";
+}
+.icon-magnifying-glass:before {
+  content: "\62";
+}
+.icon-plus:before {
+  content: "\63";
+}
+.footer-nav__soc-link--tw:before {
+  content: "\64";
+}
+.icon-twitter:before{
+  content: "\64";
+}
+.footer-nav__soc-link--pn:before {
+  content: "\65";
+}
+.icon-pinterest:before{
+  content: "\65";
+}
+.footer-nav__soc-link--fb:before {
+  content: "\66";
+}
+.icon-facebook:before{
+  content: "\66";
+}
+.footer-nav__soc-link--gp:before {
+  content: "\67";
+}
+.footer-nav__soc-link--tu:before {
+  content: "\68";
+}
+.footer-nav__soc-link--vm:before {
+  content: "\69";
+}
+.icon-bars:before {
+  content: "\6a";
+}
+.icon-caret-down:before {
+  content: "\6b";
+}
+.icon-rub:before {
+  content: "\6e";
+  position: relative;
+  top: 4px;
+  @media(min-width:768px) and (max-width:1200px){
+    top: 2px;
+  }
+   @media(min-width:1200px){
+    top: 2px;
+  }
+}
+.icon-eur:before {
+  content: "\6d";
+  position: relative;
+  top: 4px;
+  @media(min-width:768px) and (max-width:1200px){
+    top: 2px;
+  }
+   @media(min-width:1200px){
+    top: 2px;
+  }
+}
+.icon-usd:before {
+  content: "\6f";
+  position: relative;
+  top: 4px;
+  @media(min-width:768px) and (max-width:1200px){
+    top: 2px;
+  }
+   @media(min-width:1200px){
+    top: 2px;
+  }
+}
+
+.icon-chevron-right:before {
+  content: "\6c";
+}
+.icon-caret-right:before {
+  content: "\70";
+}
+.icon-chevron-left:before {
+  content: "\71";
+}

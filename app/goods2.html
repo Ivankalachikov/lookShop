@@ -1,0 +1,55 @@
+	<div class="goods__item goods__item--sale">
+		<img src="img/goods-1.jpg" alt="" class="goods__item-img" width="220" height="375">
+		<div class="goods__item-name">Mimosa Lace Dress</div>
+		<div class="goods__item-price">
+			<i class="icon-usd goods__item-currency-icon"></i>76.95
+		</div>
+		<div class="goods__item-btn">Add to cart</div>
+		<div class="goods__hidden">Shop it</div>
+	</div>
+	<div class="goods__item">
+		<img src="img/goods-2.jpg" alt="" class="goods__item-img">
+		<div class="goods__item-name">Feel tank</div>
+		<div class="goods__item-price">
+			<i class="icon-usd goods__item-currency-icon"></i>59.95
+		</div>
+		<div class="goods__item-btn">Add to cart</div>
+		<div class="goods__hidden">Shop it</div>
+	</div>
+	<div class="goods__item goods__item--sale">
+		<img src="img/goods-3.jpg" alt="" class="goods__item-img">
+		<div class="goods__item-name">Hot shorts</div>
+		<div class="goods__item-price">
+			<i class="icon-usd goods__item-currency-icon"></i>45.95
+		</div>
+		<div class="goods__item-btn">Add to cart</div>
+		<div class="goods__hidden">Shop it</div>
+	</div>
+	<div class="goods__item">
+		<img src="img/goods-4.jpg" alt="" class="goods__item-img">
+		<div class="goods__item-name">Petrol sweater</div>
+		<div class="goods__item-price">
+			<i class="icon-usd goods__item-currency-icon"></i>36.95
+		</div>
+		<div class="goods__item-btn">Add to cart</div>
+		<div class="goods__hidden">Shop it</div>
+	</div>
+	
+
+	<script>
+
+		$(document).ready(function(){
+			var ww=$(window).width();
+			if (ww>768) {
+				$('.goods__items').slick({
+					infinite: true,
+					slidesToShow: 3,
+					slidesToScroll: 1
+				})}
+				 
+		
+
+
+
+		});
+	</script>

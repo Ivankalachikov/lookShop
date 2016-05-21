@@ -1,0 +1,29 @@
+.unslider-nav {
+	ol {
+		list-style: none;
+		text-align: center;
+
+		li {
+			display: inline-block;
+			width: 6px;
+			height: 6px;
+			margin: 0 4px;
+
+			background: @unslider-dot-colour;
+			border-radius: 5px;
+
+			overflow: hidden;
+			text-indent: -999em;
+
+			border: 2px solid @unslider-dot-colour;
+
+			cursor: pointer;
+
+			&.unslider-active {
+				background: @bg-coral;
+				border-color:@bg-coral;
+				cursor: default;
+			}
+		}
+	}
+}

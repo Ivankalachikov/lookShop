@@ -1,0 +1,61 @@
+@import "mixin.less";
+@import "variables.less";
+@import "typography.less";
+@import "sprite.less";
+
+.payments{
+	display: none;
+
+	@media(min-width:768px){
+		display: block;
+		vertical-align: middle;
+		background-color: @bg-light;
+		padding: 15px 0;
+		color: @text-dark-gray;
+		text-align: center;
+	}
+
+	&__img{
+		.sprite();
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 10px;
+		&:hover{
+			transform:scale(1.09);
+		}
+	}
+
+	&__img1{
+		.sprite-payments1();
+	}
+	&__img2{
+		.sprite-payments2();
+	}
+	&__img3{
+		.sprite-payments3();
+	}
+	&__img4{
+		.sprite-payments4();
+	}
+	&__img5{
+		.sprite-payments5();
+	}
+	&__img6{
+		.sprite-payments6();
+	}
+	&__img7{
+		.sprite-payments7();
+	}
+	&__img8{
+		.sprite-payments8();
+	}
+	&__img9{
+		.sprite-payments9();
+	}
+	&__img10{
+		.sprite-payments10();
+	}
+	&__img11{
+		.sprite-payments11();
+	}
+}

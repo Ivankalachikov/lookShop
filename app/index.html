@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>lookShop</title>
+	<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+
+
+	<header class="page-header">
+
+		<div class="top-line">
+			<div class="top-line__inner">
+				<div class="top-line__phone-wrap">
+					<div class="top-line__phone">
+						Custom care
+						<a href="tel:888-23-4567" class="top-line__phone-link">
+							888&#8209;23&#8209;4567
+						</a>
+					</div>
+				</div>
+				<!-- /.top-line__phone-wrap -->
+				
+				<div class="top-line__nav-wrap">
+					
+					<div class="top-line__nav-inner">
+						<div class="top-line__currency">
+							<div class="top-line__currency-select">
+								<i class="icon-usd top-line__currency-icon"></i>USD&nbsp<i class="icon-caret-down top-line__currency-btn"></i>
+							</div>
+							<ul class="top-line__currency-list">
+								<li class="top-line__currency-item top-line__currency--us icon-usd">US</li>
+								<li class="top-line__currency-item top-line__currency--eur icon-eur">EUR</li>
+								<li class="top-line__currency-item top-line__currency--rur icon-rub">RUR</li>
+							</ul>
+						</div>
+						<!-- /.top-line__currency -->
+
+						<div class="top-line__user-block-wrap">
+							<div class="user-block">
+								<div class="user-block__login">
+									<a href="#" class="user-block__login-link">
+										Login
+									</a>
+									<a href="#" class="user-block__login-link">
+										Sign up
+									</a>
+								</div>
+								<div class="user-block__account">
+									<i class="icon-user user-block__account-icon"></i>
+									My account
+									<ul class="user-block__account-list">
+										<li class="user-block__account-name">
+											<a href="#" class="user-block__account-name-link">
+												userName
+											</a>
+										</li>
+										<li class="user-block__account-logout">
+											<a href="#" class="user-block__account-logout-link">
+												Logout
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- /.top-line__user-block-wrap -->
+						<div class="top-line__search-wrap icon-magnifying-glass">
+						</div>				
+						<!-- /.top-line__search-wrap -->
+						<form action="#">
+							<input type="text" name="top-line__search" class="top-line__search-input">
+						</form>
+
+					</div>
+					<!-- /.top-line__nav-wrap -->
+				</div>
+				<!-- /.top-line__nav-inner -->
+			</div>
+			<!-- /.top-line__inner -->
+		</div>
+		<!-- /.top-line -->
+
+		<div class="menu">
+			<div class="menu__inner">
+				<div class="menu__logo-wrap">
+					<a href="#" class="menu__logo-link">
+						<img src="img/page-logo.png" alt="" class="menu__logo-img" width="358" height="88">
+					</a>
+				</div>
+
+				<div class="menu__cart-wrap">
+					<div class="cart">
+						<div class="cart__description">
+							Your cart
+							<i class="icon-caret-down cart__description-icon"></i>
+						</div>
+
+						<div class="cart__list-wrap">
+							<ul class="cart__item-list">
+								<li class="cart__item">
+									<a href="#" class="cart__item-link">
+										<span class="cart__item-name">
+											Beautiful Dress
+										</span>
+										<span class="cart__item-quantity">
+											1
+										</span>
+										<span class="cart__item-price">
+											<i class="cart__currents icon-usd"></i>
+											100
+										</span>
+									</a>
+								</li>
+								<li class="cart__item">
+									<a href="#" class="cart__item-link">
+										<span class="cart__item-name">
+											Beautiful Shorts
+										</span>
+										<span class="cart__item-quantity">
+											1
+										</span>
+										<span class="cart__item-price">
+											<i class="cart__currents icon-usd"></i>
+											50
+										</span>
+									</a>
+								</li>
+								<li class="cart__item">
+									<a href="#" class="cart__item-link">
+										<span class="cart__item-name">
+											Beautiful Shoes
+										</span>
+										<span class="cart__item-quantity">
+											1
+										</span>
+										<span class="cart__item-price">
+											<i class="cart__currents icon-usd"></i>
+											200
+										</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="cart__all">
+							<div class="cart__icon-wrap"><i class="cart__icon"></i></div>
+							<div class="cart__items">
+								<div class="cart__items-quantity">
+									3
+								</div>
+								Items |
+								<div class="cart__items-sum">
+									<i class="cart__currents icon-usd"></i>
+									350
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+					<!-- /.cart -->
+				</div>
+				<!-- /.menu__cart-wrap -->
+
+
+				<nav class="menu__nav-wrap">
+
+					<div class="nav">
+						<div class="nav__header">Menu
+							<i class="icon-bars nav__icon"></i>
+						</div>
+						<ul class="nav__list nav__list--lv1">
+
+							<li class="nav__item">
+								<a href="#" class="nav__item-link">
+									new
+								</a>
+								<ul class="nav__list">
+									<li class="nav__item"><a href="" class="nav__item-link">Woman</a></li>
+									<li class="nav__item"><a href="" class="nav__item-link">Man</a></li>
+								</ul>
+							</li>
+
+							<li class="nav__item ">
+								<a href="#" class="nav__item-link">
+									designers
+								</a>
+								<ul class="nav__list">
+									<li class="nav__item"><a href="" class="nav__item-link">CK</a></li>
+									<li class="nav__item"><a href="" class="nav__item-link">DG</a></li>
+								</ul>
+							</li>
+
+							<li class="nav__item ">
+								<a href="#" class="nav__item-link">
+									women
+								</a>
+								<ul class="nav__list">
+									<li class="nav__item"><a href="" class="nav__item-link">Shoes</a></li>
+									<li class="nav__item">
+										<a href="" class="nav__item-link">Clothes</a>
+										<ul class="nav__list">
+											<li class="nav__item"><a href="" class="nav__item-link">Dresses</a></li>
+											<li class="nav__item"><a href="" class="nav__item-link">Pants</a></li>
+											<li class="nav__item"><a href="" class="nav__item-link">T-Shirts</a></li>
+											<li class="nav__item"><a href="" class="nav__item-link">Shorts</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+
+							<li class="nav__item ">
+								<a href="#" class="nav__item-link">
+									men
+								</a>
+								<ul class="nav__list">
+									<li class="nav__item"><a href="" class="nav__item-link">Shoes</a></li>
+									<li class="nav__item">
+										<a href="" class="nav__item-link">Clothes</a>
+										<ul class="nav__list">
+											<li class="nav__item"><a href="" class="nav__item-link">T-Shirts</a></li>
+											<li class="nav__item"><a href="" class="nav__item-link">Jeans</a></li>
+											<li class="nav__item"><a href="" class="nav__item-link">Shosts</a></li>
+											<li class="nav__item"><a href="" class="nav__item-link">Pants</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+
+							<li class="nav__item ">
+								<a href="#" class="nav__item-link">
+									clearence
+								</a>
+								<ul class="nav__list">
+									<li class="nav__item"><a href="" class="nav__item-link">Woman</a></li>
+									<li class="nav__item"><a href="" class="nav__item-link">Man</a></li>
+								</ul>
+							</li>
+
+						</ul>
+					</div>
+					<!-- /.nav -->
+
+				</nav>
+				<!-- /.menu__nav-wrap -->
+
+
+
+				<div class="slider__wrap">
+					<div class="slider">
+							<div class="slider-item">
+								<img src="img/slider-1.jpg" alt="" class="slider__img" width="1200" height="440">
+									<a href="#" class="slider__btn">Shop now</a>
+							</div>
+							<div class="slider-item">
+								<img src="img/slider-2.jpg" alt="" class="slider__img" width="1200" height="440">
+								
+							</div>
+							<div class="slider-item">
+								<img src="img/slider-3.jpg" alt="" class="slider__img" width="1200" height="440">
+							</div>
+							
+					</div>
+					<!-- /.slider -->
+				<i class="slider__arrows slider__arrow--next"></i>
+				<i class="slider__arrows slider__arrow--prev"></i>
+				</div>
+				<!-- /.slider__wrap -->
+			</div>
+			<!-- /.menu__inner -->
+		</div>
+		<!-- /.menu -->
+	</header>
+	<!-- /.page-header -->
+	
+
+
+	<section class="promo">
+		<div class="promo__top-line">
+			<div class="promo__inner">
+				<div class="promo__subscribe">
+					<form action="">
+					<div class="promo__title">Stay updated</div>
+						<input type="email" name="promo__subscribe" class="promo__subscribe-input" placeholder="Your email adress"><input type="submit" class="promo__subscribe-btn" value="">
+					</form>
+				</div>
+				<div class="promo__soc">
+					<div class="promo__soc-text">Find us here</div>
+					<a href="" class="promo__soc-link promo__soc-link--fb icon-facebook" title="facebook"></a><a href="" class="promo__soc-link promo__soc-link--tw icon-twitter" title="twitter"></a><a href="" class="promo__soc-link promo__soc-link--pn icon-pinterest" title="pinterest"></a>
+				</div>
+			</div>
+		</div>
+		<div class="promo__inner promo__banner-wrap">
+			<a href="#" class="promo__item promo__item--big">
+				<img src="img/promo-big-1.jpg" alt="" class="promo__item-img promo__item-img--big">
+			</a>
+			<a href="#" class="promo__item promo__item--mid">
+				<img src="img/promo-mid-1.jpg" alt="" class="promo__item-img promo__item-img--mid">
+			</a>
+			<a href="#" class="promo__item promo__item--small">
+				<img src="img/promo-small-1.jpg" alt="" class="promo__item-img promo__item-img--small">
+				<span class="promo__item-text">
+					Best sellers <i class="icon-chevron-right promo__next-icon"></i>
+				</span>
+			</a>
+			<a href="#" class="promo__item promo__item--small">
+				<img src="img/promo-small-2.jpg" alt="" class="promo__item-img promo__item-img--small">
+				<span class="promo__item-btn">
+					Shop now
+				</span>
+			</a>
+		</div>
+		<!-- /.promo__inner -->
+	</section>
+	<!-- /.promo -->
+
+
+
+	<section class="goods">
+		<div class="goods__nav">
+			<div class="goods__inner">
+			<div class="goods__nav-select">
+				What's hot?
+				<i class="goods__nav-select-btn icon-caret-down"></i>
+			</div>
+				<ul class="goods__nav-list">
+					<li class="goods__nav-item">
+						<a href="#" class="goods__nav-item-link goods__nav-item-link--active">
+							What's hot?
+						</a>
+					</li>
+					<li class="goods__nav-item">
+						<a href="#" class="goods__nav-item-link">
+							Designers
+						</a>
+					</li>
+					<li class="goods__nav-item">
+						<a href="#" class="goods__nav-item-link">
+							Features
+						</a>
+					</li>
+					<li class="goods__nav-item">
+						<a href="#" class="goods__nav-item-link">
+							Latest
+						</a>
+					</li>
+				</ul>
+				<div class="goods__controls">
+					<i class="goods__control goods__control--prev"></i>
+					<i class="goods__control goods__control--next"></i>
+				</div>
+			</div>
+			<!-- /.goods__nav__inner -->
+		</div>
+		<!-- /.goods__nav -->
+		<div class="goods__items">
+			<div class="goods__item goods__item--sale">
+				<img src="img/goods-1.jpg" alt="" class="goods__item-img" width="220" height="375">
+				<div class="goods__item-name">Mimosa Lace Dress</div>
+				<div class="goods__item-price">
+					<i class="icon-usd goods__item-currency-icon"></i>76.95
+				</div>
+				<div class="goods__item-btn">Add to cart</div>
+				<div class="goods__hidden">Shop it</div>
+			</div>
+			<div class="goods__item">
+				<img src="img/goods-2.jpg" alt="" class="goods__item-img">
+				<div class="goods__item-name">Feel tank</div>
+				<div class="goods__item-price">
+					<i class="icon-usd goods__item-currency-icon"></i>59.95
+				</div>
+				<div class="goods__item-btn">Add to cart</div>
+				<div class="goods__hidden">Shop it</div>
+			</div>
+			<div class="goods__load-more">Load more</div>
+			<div class="goods__container-more">
+				
+			</div>
+		</div>
+		<!-- /.goods__items -->
+	</section>
+	<!-- /.goods -->
+
+
+
+	<section class="clearance">
+		<div class="clearance__inner">
+			<div class="clearance__icon" title="Clearance 50% off"></div>
+			<div class="clearance__items">
+				<article class="goods__item">
+					<img src="img/goods-6.jpg" alt="" class="goods__item-img">
+					<div class="goods__item-name">Nadia dress</div>
+					<div class="goods__item-price">
+						<i class="icon-usd goods__item-currency-icon"></i>76.95
+					</div>
+					<div class="goods__item-btn">Add to cart</div>
+					<div class="goods__hidden">Shop it</div>
+				</article>
+				<article class="goods__item goods__item--sale">
+					<img src="img/goods-7.jpg" alt="" class="goods__item-img">
+					<div class="goods__item-name">Sofi blouse</div>
+					<div class="goods__item-price">
+						<i class="icon-usd goods__item-currency-icon"></i>76.95
+					</div>
+					<div class="goods__item-btn">Add to cart</div>
+					<div class="goods__hidden">Shop it</div>
+				</article>
+				
+				<div class="clearance__load-more">Load more</div>
+				<div class="clearance__container-more"></div>
+			</div>
+			<!-- /.clearance__items -->
+		</div>
+		<!-- /.clearance__inner -->
+	</section>
+	<!-- /.clearance -->
+
+
+
+	<section class="brands">
+		<div class="brands__inner">
+			<div class="brands__title">
+				Favourite brands
+			</div>
+			<div class="brands__items">
+				<div class="brands__item brands__item1"></div>
+				<div class="brands__item brands__item2"></div>
+				<div class="brands__item brands__item3"></div>
+				<div class="brands__item brands__item4"></div>
+				<div class="brands__item brands__item5"></div>
+				<div class="brands__item brands__item6"></div>
+				<div class="brands__item brands__item7"></div>
+				<div class="brands__item brands__item8"></div>
+			</div>
+		</div>
+		<!-- /.brands__inner -->
+	</section>
+	<!-- /.brands -->
+	
+
+
+	<section class="about">
+		<div class="about__inner">
+			<div class="about__title">
+				About LookShop
+			</div>
+			<p class="about__text">
+				This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. 
+			</p>
+		</div>
+	</section>
+	<!-- /.about -->
+
+
+
+	<section class="payments">
+		<div class="payments__inner">
+			We accept
+			<div class="payments__img payments__img1"></div>
+			<div class="payments__img payments__img2"></div>
+			<div class="payments__img payments__img3"></div>
+			<div class="payments__img payments__img4"></div>
+			<div class="payments__img payments__img5"></div>
+			<div class="payments__img payments__img6"></div>
+			<div class="payments__img payments__img7"></div>
+			<div class="payments__img payments__img8"></div>
+			<div class="payments__img payments__img9"></div>
+			<div class="payments__img payments__img10"></div>
+			<div class="payments__img payments__img11"></div>
+		</div>
+		<!-- /.payments__inner -->
+	</section>
+	<!-- /.payments -->
+
+	<footer class="footer">
+		<div class="footer-nav">
+			<div class="footer-nav__inner">
+
+				<div class="footer-nav__list-wrap">
+					<ul class="footer-nav__list footer-nav__list--lv1">
+						<li class="footer-nav__item">
+							<span class="footer-nav__item-link">
+								Customer Service
+							</span>
+					
+							<ul class="footer-nav__list">
+								<li class="footer-nav__item">
+									<a href="" class="footer-nav__item-link">
+										Contact
+									</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="" class="footer-nav__item-link">
+										FAQ
+									</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="" class="footer-nav__item-link">
+										Terms of payment
+									</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="" class="footer-nav__item-link">
+										Terms of sale
+									</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="" class="footer-nav__item-link">
+										Delivery terms and conditions
+									</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="" class="footer-nav__item-link">
+										Returns and Refunds
+									</a>
+								</li>
+							</ul>
+					
+						</li>
+					</ul>
+					
+					<ul class="footer-nav__list footer-nav__list--lv1">
+						<li class="footer-nav__item">
+							<a href="" class="footer-nav__item-link">
+								Information
+							</a>
+					
+							<ul class="footer-nav__list">
+								<li class="footer-nav__item">
+									<a href="" class="footer-nav__item-link">
+										Affiliate
+									</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="" class="footer-nav__item-link">
+										Cookies
+									</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="" class="footer-nav__item-link">
+										How to shop
+									</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="" class="footer-nav__item-link">
+										About Nelly
+									</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="" class="footer-nav__item-link">
+										Investor relations
+									</a>
+								</li>
+							</ul>
+					
+						</li>
+					</ul>
+					
+					<ul class="footer-nav__list footer-nav__list--lv1">
+						<li class="footer-nav__item">
+							<span class="footer-nav__item-link">
+								Campaigns
+							</span>
+					
+							<ul class="footer-nav__list">
+								<li class="footer-nav__item">
+									<a href="" class="footer-nav__item-link">
+										Evening dresses
+									</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="" class="footer-nav__item-link">
+										Makeup
+									</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="" class="footer-nav__item-link">
+										Fashion forward
+									</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="" class="footer-nav__item-link">
+										Training clotches
+									</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="" class="footer-nav__item-link">
+										Special Occasion Dresses
+									</a>
+								</li>
+							</ul>
+					
+						</li>
+					</ul>
+					
+					<ul class="footer-nav__list footer-nav__list--lv1">
+						<li class="footer-nav__item">
+							<span class="footer-nav__item-link">
+								Stores
+							</span>
+					
+							<ul class="footer-nav__list">
+								<li class="footer-nav__item">
+									<a href="" class="footer-nav__item-link">
+										Paris
+									</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="" class="footer-nav__item-link">
+										New York
+									</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="" class="footer-nav__item-link">
+										London
+									</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="" class="footer-nav__item-link">
+										Madrid
+									</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="" class="footer-nav__item-link">
+										Tokio
+									</a>
+								</li>
+							</ul>
+					
+						</li>
+					</ul>
+				</div>
+				<!-- /.footer-nav__list-wrap -->
+
+				<div class="footer-nav__soc">
+					<span class="footer-nav__soc-title">
+						Social
+					</span>
+					<a href="" class="footer-nav__soc-link footer-nav__soc-link--tw"></a>
+					<a href="" class="footer-nav__soc-link footer-nav__soc-link--pn"></a>
+					<a href="" class="footer-nav__soc-link footer-nav__soc-link--fb"></a>
+					<a href="" class="footer-nav__soc-link footer-nav__soc-link--gp"></a>
+					<a href="" class="footer-nav__soc-link footer-nav__soc-link--tu"></a>
+					<a href="" class="footer-nav__soc-link footer-nav__soc-link--vm"></a>
+				</div>	
+				<div class="footer-nav__sec-logo">
+					
+				</div>
+			</div>
+			<!-- /.footer-nav__inner -->
+		</div>
+		<!-- /.footer-nav -->
+
+		<div class="footer__btm-line">
+			<div class="btm-line">
+				<div class="btm-line__nav">
+					<ul class="btm-line__nav-list">
+						<li class="btm-line__nav-item">
+							<a href="#" class="btm-line__item-link">
+								Privacy & Cookies
+							</a>
+						</li>
+						<li class="btm-line__nav-item">
+							<a href="#" class="btm-line__item-link">
+								Terms & Conditions
+							</a>
+						</li>
+						<li class="btm-line__nav-item">
+							<a href="#" class="btm-line__item-link">
+								Accessibility
+							</a>
+						</li>
+						<li class="btm-line__nav-item">
+							<a href="#" class="btm-line__item-link">
+								Store Directory
+							</a>
+						</li>
+						<li class="btm-line__nav-item">
+							<a href="#" class="btm-line__item-link">
+								About Us
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="btm-line__menu-icon icon-bars"></div>
+				<div class="btm-line__copyright">
+					© LookShop.com<br>
+					All Rights Reserved
+				</div>
+			</div>
+			<!-- /.btm-line -->
+		</div>
+		<!-- /.footer__btm-line -->
+	</footer>
+	<!-- /.footer -->
+
+</script>
+<!-- <script src="js/nav.js"></script>
+<script src="js/goods.js"></script>
+<script src="js/currency.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/search.js"></script>
+<script src="js/slick.js"></script> -->
+<script src="js/all.js"></script>
+<script>
+	$(document).ready(function(){
+		$('.slider').slick({
+			dots:true,
+			autoplay: true,
+  		autoplaySpeed: 5000,
+  		appendArrows: $('.slider__arrows'),
+			nextArrow: $('.slider__arrow--next'),
+			prevArrow: $('.slider__arrow--prev'),
+
+		});
+
+	});
+
+</script>
+
+</body>
+</html>

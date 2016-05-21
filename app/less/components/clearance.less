@@ -1,0 +1,53 @@
+@import "mixin.less";
+@import "variables.less";
+@import "typography.less";
+@import "sprite.less";
+
+.clearance{
+	
+	&__inner{
+		.inner();
+		overflow: hidden;
+		padding-top: 25px;
+		padding-bottom: 35px;
+		@media(min-width:1200px){
+			width: auto;
+		}
+	}
+
+	&__icon{
+		.sprite();
+		.sprite-50off();
+		width: 157px;
+		height: 157px;
+		margin: 0 auto;
+		margin-bottom: 25px;
+		position: relative;
+
+		&::after{
+			content: "";
+			position: absolute;
+			top: 50%;
+			right: 200px;
+			width: 2000px;
+			border-bottom:2px solid @light-gray;
+		}
+
+		&::before{
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 200px;
+			width: 1000px;
+			border-bottom:2px solid @light-gray;
+		}
+	}
+
+	&__load-more{
+		.btn-black();
+
+		@media(min-width:768px){
+			display: none;
+		}
+	}
+}

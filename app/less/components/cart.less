@@ -1,0 +1,159 @@
+@import "mixin.less";
+@import "variables.less";
+@import "typography.less";
+@import "sprite.less";
+
+.cart{
+	.clr();
+	//.inner();
+	background-color: @bg-light;
+	border:1px solid @light-gray;
+	margin-bottom: 22px;
+	margin-left: 3%;
+	margin-right: 2%;
+	
+	@media(min-width:768px) and (max-width:1200px){
+		float: right;
+		width: 310px;
+		margin-right: 3%;
+	}
+
+	@media(min-width:1200px){
+		width: 200px;
+		position: relative;
+	}
+
+
+	
+	&:hover &__icon,
+	&:active &__icon{
+		.sprite();
+		.sprite-cart-active();
+		display: table-cell;
+	}
+
+	&__item-list{
+		list-style:none;
+		margin: 0;
+		padding: 0;
+		float: right;
+		width: 100%;
+		position: relative;
+		display: table;
+		text-align: right;
+		@media(min-width:1200px){
+			position: absolute;
+			top:100%;
+			left: 0;
+			z-index: 1;
+			background-color: @bg-light;
+	border:1px solid @light-gray;
+		}
+	}
+
+	&__item{
+		padding: 15px 15px;
+		margin: 0;
+		border-bottom: 2px solid @bg-coral;
+		
+	}
+
+	&__item-link{
+		color: @text-light-gray;
+	}
+
+	&__item-name{
+		display: table-cell;
+		padding-right: 20px;
+	}
+
+	&__item-quantity{
+		display: table-cell;
+		padding-left: 20px;
+		padding-right: 20px;
+		border-left: 2px solid @bg-coral;
+	}
+
+	&__item-price{
+		padding-left: 20px;
+		border-left: 2px solid @bg-coral;
+		display: table-cell;
+	}
+
+	&__description{
+		display: none;
+
+		@media(min-width:768px) and (max-width:1200px){
+			display: block;
+			color: @text-light-gray;
+			background-color: @bg-white;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			border-bottom: 2px solid @light-gray;
+			margin-bottom: 15px;
+			.inner();
+		}
+		@media(min-width:1200px){
+			display: block;
+			color: @text-light-gray;
+			background-color: @bg-white;
+			padding: 15px;
+			border-bottom: 2px solid @light-gray;
+		}
+	}
+
+	&__description-icon{
+		display: none;
+
+		@media(min-width:768px){
+			display: block;
+			float: right;
+		}
+	}
+
+	&__all{
+		display: table;
+		width: 90%;
+		padding: 22px 15px;
+
+		@media(min-width:768px){
+			padding: 0 15px;
+		}
+
+	}
+
+	&____list-wrap{
+		.clr();
+	}
+
+	&__icon-wrap{
+		vertical-align: middle;
+		display:table-cell;
+		
+	}
+
+	&__icon{
+		.sprite();
+		.sprite-cart-not-active();
+
+		@media(min-width:768px){
+			zoom:0.5;
+		}
+	}
+
+	&__items{
+		line-height: 49px;
+		color: @text-light-gray;
+		text-transform: uppercase;
+		float: right;
+		display: inline-block;
+		vertical-align: middle;
+		display: table-cell;
+	}
+
+	&__items-quantity,
+	&__items-sum{
+		display: inline-block;
+	}
+
+}
